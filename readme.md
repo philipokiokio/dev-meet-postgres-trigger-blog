@@ -20,8 +20,8 @@ arduino
 
 Then you run it manually in the terminal:
 
-```bash
-node migrations/create_triggers.js
+```
+node migrations/create_triggers.js```
 This will connect to your database, execute the SQL statements to create triggers/functions, and exit.
 
 2️⃣ Alternatives in Node.js projects
@@ -111,7 +111,7 @@ func main() {
 
 Run it in the terminal:
 
-`go run create_triggers.go`
+```go run create_triggers.go```
 
 
 The script connects to your database, executes the SQL, and exits. You only run it once (like a migration).

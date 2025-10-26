@@ -20,8 +20,8 @@ arduino
 
 Then you run it manually in the terminal:
 
-```
-node migrations/create_triggers.js```
+`node migrations/create_triggers.js`
+
 This will connect to your database, execute the SQL statements to create triggers/functions, and exit.
 
 2️⃣ Alternatives in Node.js projects
@@ -30,7 +30,7 @@ If you use a framework like Knex.js or TypeORM, you can integrate the trigger cr
 
 
 
-npx knex migrate:latest
+`npx knex migrate:latest`
 Or use TypeORM migrations. Inside the migration file, you can execute raw SQL exactly like the script shown earlier.
 
 Startup scripts (less common)
@@ -53,7 +53,8 @@ Here’s a clear breakdown of how to run the Go and PHP trigger scripts you have
 
 Go
 
-Create a Go file, e.g., create_triggers.go:
+Create a Go file, e.g., `createTriggers.go`:
+
 ```
 package main
 
@@ -105,13 +106,11 @@ func main() {
     tx.Commit()
     fmt.Println("Triggers created successfully!")
 }
-
 ```
-
 
 Run it in the terminal:
 
-```go run create_triggers.go```
+`go run create_triggers.go`
 
 
 The script connects to your database, executes the SQL, and exits. You only run it once (like a migration).
@@ -156,11 +155,12 @@ try {
     $pdo->rollBack();
     echo "Error: " . $e->getMessage() . "\n";
 }
+
 ```
 
 Run it in the terminal:
 
-``php create_triggers.php```
+```php create_triggers.php```
 
 
 Just like Go, this runs the SQL and exits. It’s a one-off operation.

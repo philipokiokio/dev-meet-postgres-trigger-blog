@@ -16,6 +16,9 @@ project/
 ├─ package.json
 ```
 code sample for NodeJs
+
+
+
 ```
 import pkg from 'pg';
 const { Pool } = pkg;
@@ -85,7 +88,6 @@ createTriggers();
 
 
 
-```
 Then you run it manually in the terminal:
 
 `node migrations/create_triggers.js`

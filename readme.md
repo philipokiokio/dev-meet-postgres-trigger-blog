@@ -14,7 +14,8 @@ project/
 ├─ src/
 │ └─ ...
 ├─ package.json
-
+```
+code sample for NodeJs
 ```
 import pkg from 'pg';
 const { Pool } = pkg;
